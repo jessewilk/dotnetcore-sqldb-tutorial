@@ -35,3 +35,4 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 
   az webapp config appsettings set --name dotNetSqlApplication --resource-group DotNetSqlApp --settings ASPNETCORE_ENVIRONMENT="Production"
+git remote add azure "https://jwilkadmin@dotnetsqlapplication.scm.azurewebsites.net/dotNetSqlApplication.git"
