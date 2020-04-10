@@ -15,6 +15,9 @@ products:
 This is a sample application that you can use to follow along with the tutorial at 
 [Build a .NET Core and SQL Database web app in Azure Web Apps for Containers](https://docs.microsoft.com/azure/app-service/containers/tutorial-dotnetcore-sqldb-app). 
 
+Tutorial Link:
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb
+
 ## License
 
 See [LICENSE](LICENSE.md).
@@ -23,3 +26,12 @@ See [LICENSE](LICENSE.md).
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
   
+  Server=tcp:db1221.database.windows.net,1433;Database=coreDB;User ID=jwilkadmin;Password=R3l3ntl3ss;Encrypt=true;Connection Timeout=30;
+
+  "https://jwilkadmin@dotnetsqlapplication.scm.azurewebsites.net/dotNetSqlApplication.git"
+
+
+  az webapp config connection-string set --resource-group DotNetSqlApp --name dotNetSqlApplication --settings MyDbConnection="Server=tcp:db1221.database.windows.net,1433;Database=coreDB;User ID=jwilkadmin;Password=R3l3ntl3ss;Encrypt=true;Connection Timeout=30;" --connection-string-type SQLServer
+
+
+  az webapp config appsettings set --name dotNetSqlApplication --resource-group DotNetSqlApp --settings ASPNETCORE_ENVIRONMENT="Production"
